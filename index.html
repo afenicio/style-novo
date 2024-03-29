@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../css/novo.style.css">
+    <style>
+        .item-label {
+            width: 200px;
+            justify-self: center;
+        }
+    </style>
+</head>
+<body>
+
+<div style="margin: 3em;">
+    <h4>Buttons</h4>
+    <div class="d-flex  m-2">
+        <div class="item-label">Primary</div>
+        <button class="novo-button button-primary">Primary</button>
+    </div>
+    <div class="d-flex   m-2">
+        <div class="item-label">Secondary</div>
+
+        <button class="novo-button button-secondary">Secondary</button>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Disabled</div>
+        <button class="novo-button button-disabled" disabled>Disabled</button>
+    </div>
+    <div class="d-flex   m-2">
+        <div class="item-label">Success</div>
+        <button class="novo-button button-success">Success</button>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Danger</div>
+        <button class="novo-button button-danger">Danger</button>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Icons</div>
+        <button class="novo-button"><i class="fa fa-remove pr-1"></i>Label</button>
+    </div>
+</div>
+<div style="margin: 3em;">
+    <h4>Typography</h4>
+    <div class="d-flex  m-2">
+        <div class="item-label">h1</div>
+        <div><h1>application name</h1></div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">h2</div>
+        <div><h2>menu item</h2></div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">h3</div>
+        <div><h3>Side menu item</h3></div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">h4</div>
+        <div><h4>Page title</h4></div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">h5</div>
+        <div><h5>Header title</h5></div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">h6</div>
+        <div><h6>Fragment title</h6></div>
+    </div>
+
+</div>
+<div style="margin: 3em;">
+    <h4>Labels and values</h4>
+    <div class="d-flex  m-2">
+        <div class="item-label">label-value</div>
+        <div>
+            <label class="novo-label">label : </label>
+            <value class="novo-value"> value</value>
+        </div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">label-input</div>
+        <div>
+            <label for="text-input" class="novo-label">label : </label>
+            <input id="text-input" type="text">
+        </div>
+    </div>
+    <div class="d-flex align-items-start m-2">
+        <div class="item-label">label-error</div>
+
+        <div class="d-flex align-items-start">
+            <label for="text-error" class="novo-label">label : </label>
+            <div class="d-flex flex-column">
+                <input id="text-error" type="text" class="error-input ml-1" value="error">
+                <div for="text-error" class="error-message">this text contains an error</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin: 3em;">
+    <h4>Selectables</h4>
+    <div class="d-flex  m-2">
+        <div class="item-label">Check box</div>
+        <div class="d-flex flex-column">
+            <div class="novo-checkbox justify-self-center">
+                <input type="checkbox" id="cb1"/>
+                <label for="cb1">Item 1</label>
+            </div>
+            <div class="novo-checkbox justify-self-center">
+                <input type="checkbox" id="cb2"/>
+                <label for="cb2">Item 2</label>
+            </div>
+            <div class="novo-checkbox justify-self-center">
+                <input type="checkbox" id="cb3"/>
+                <label for="cb3">Item 3</label>
+                <input type="checkbox" id="cb4"/>
+                <label for="cb4">Item 4</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Radio button</div>
+        <div class="d-flex flex-column">
+            <div class="novo-radio justify-self-center">
+                <input type="radio" id="rb1" name="radioOption"/>
+                <label for="rb1">Option 1</label>
+            </div>
+            <div class="novo-radio justify-self-center">
+                <input type="radio" id="rb2" name="radioOption"/>
+                <label for="rb2">Option 2</label>
+            </div>
+            <div class="novo-radio justify-self-center">
+                <input type="radio" id="rb3" name="radioOption"/>
+                <label for="rb3">Option 3</label>
+                <input type="radio" id="rb4" name="radioOption"/>
+                <label for="rb4">Option 4</label>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Toggle</div>
+        <div class="d-flex  novo-checkbox-style">
+            <input type="checkbox" id="novoToggle" class="novo-toggle-checkbox"/>
+            <label for="novoToggle"></label>
+            <span class="off">I want to subscribe the newsletter</span>
+            <span class="on novo-value">I want to subscribe the newsletter</span>
+        </div>
+    </div>
+    <div class="d-flex  m-2">
+        <div class="item-label">Switch</div>
+        <div class="d-flex novo-switch-style">
+            <input type="checkbox" id="novoToggleSwitch" class="novo-toggle-switch"/>
+            <label for="novoToggleSwitch"></label>
+            <span class="off">Disabled</span> <!-- Visible by default -->
+            <span class="on novo-value">Enabled</span> <!-- Visible when checked -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
